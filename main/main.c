@@ -7,7 +7,7 @@
 #include <esp_log.h>
 #include <esp_littlefs.h>
 
-#include "arena.h"
+#include "structures/arena.h"
 
 char *FS_TAG = "FILESYSTEM";
 

@@ -1,2 +1,2 @@
-idf_component_register(SRCS "main.c" "./HLDC/hdlc.c" "arena.c"
-                    INCLUDE_DIRS ".")
+idf_component_register(SRCS "main.c" "./structures/arena.c" "./structures/byte_array.c"
+                    INCLUDE_DIRS "." "./structures/" "./DLMS/")
