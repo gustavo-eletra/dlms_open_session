@@ -1,6 +1,7 @@
 #pragma once
 #include <stdint.h>
 #include <structures/arena.h>
+#include <helpers.h>
 
 //TODO: Make functions that allocate and dealocate in the arena
 
@@ -32,3 +33,6 @@ int byte_array_attach(byte_array *arr, uint8_t *value, uint16_t count, uint16_t 
 int byte_array_is_empty(byte_array *arr);
 int byte_array_clear(byte_array *arr);
 int byte_array_get(byte_array *arr, uint8_t *value, uint16_t count);
+int byte_array_set(byte_array *arr, uint8_t *src, uint16_t count);
+int byte_array_move(byte_array *arr, uint16_t src, uint16_t dst, uint16_t count);
+uint32_t byte_array_index_of(byte_array *arr, uint8_t ch);
