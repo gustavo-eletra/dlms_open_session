@@ -336,14 +336,14 @@ int byte_array_get(byte_array *arr, uint8_t *value, uint16_t count)
 
 int byte_array_insert(const uint8_t *src, uint32_t count, byte_array *dst, uint32_t index)
 {
-    int ret;
+    int ret = -1;
     if(dst->size == 0)
     {
         ret = byte_array_set(dst, src, count);
     }
     else
     {
-        if((ret) = byte_array_capacity(dst, dst->size + count) == 0 &&
+        if((ret = byte_array_capacity(dst, dst->size + count)) == 0 &&
         (ret = byte_array_move(dst, index, index + count, dst->size - index)) == 0)
         {
             memmove(dst->data + index, src + index, count);
