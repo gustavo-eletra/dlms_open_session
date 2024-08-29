@@ -1,4 +1,2 @@
-idf_component_register(SRCS "helpers.c" "main.c" "
-./structures/arena.c" "./structures/byte_array.c" "./structures/byte_array.c"
-"./COM/basic_com.c" "./COM/uart.c" 
+idf_component_register(SRCS "helpers.c" "main.c" "./structures/arena.c" "./structures/byte_array.c" "./structures/byte_array.c" "./COM/basic_com.c" "./COM/uart.c" "./DLMS/message.c"
                     INCLUDE_DIRS "." "./structures/" "./DLMS/" "./COM")
